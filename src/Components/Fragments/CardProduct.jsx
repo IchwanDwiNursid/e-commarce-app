@@ -6,7 +6,7 @@ import { addToCart } from "../../redux /slices/cartSlice.js";
 const CardProduct = (props) => {
   const { children } = props;
   return (
-    <div className="w-full max-w-sm bg-yellow-400 border border-red-500 rounded-lg shadow my-2 mx-2">
+    <div className="w-full max-w-sm  bg-fuchsia-500  border border-slate-500 rounded-lg shadow my-2 mx-2">
       {children}
     </div>
   );
@@ -27,7 +27,7 @@ const Body = (props) => {
 };
 
 const Footer = (props) => {
-  const { price, handleAddToCart, id } = props;
+  const { price, id } = props;
   const dispatch = useDispatch();
   return (
     <div className="flex items-center justify-between px-5 pb-5">
